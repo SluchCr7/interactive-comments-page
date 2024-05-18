@@ -1,0 +1,43 @@
+let comments = document.getElementById("comments");
+let mycomment = document.getElementById("input_mycomment");
+let sendcomment = document.getElementById("sendcomment");
+
+sendcomment.addEventListener("click", () => {
+  comments.innerHTML += `
+    <div class="cont_comment">
+    <div class="comment">
+        <div class="likes">
+            <span class="likes_count_plus">+</span>
+            <span class="likes_count">0</span>
+            <span class="likes_count_minus">-</span>
+        </div>
+        <div class="body_comment">
+            <div class="user">
+                <div class="left_side_up_comment_user">
+                    <div class="image">
+                        <img src="./images/avatars/image-juliusomo.png" alt="">
+                    </div>
+                    <div class="user_info">
+                        <p class="username">juliusomo</p>
+                        <p class="date">5 month ago</p>
+                    </div>
+                </div>
+                <div class="options" id="options">
+                  <div>
+                    <i class="fa-solid fa-pen"></i>
+                    <p class="edit">Edit</p>
+                  </div>
+                  <div class="deleteBtn">
+                    <i class="fa-regular fa-trash-can"></i>
+                    <p class="delete">delete</p>
+                  </div>
+                </div>
+            </div> 
+            <div class="content_comment">
+                <p>${mycomment.value}</p>
+            </div>
+        </div>
+      </div>  
+    </div>
+    `
+})

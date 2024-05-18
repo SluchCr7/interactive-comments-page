@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive comments section</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Pull dynamic content from the data.json file -->
+
+  <div class="comments" id="comments">
+    <div class="contain_comments">
+      <div class="cont_comment">
+        <div class="comment">
+          <div class="likes">
+            <span class="likes_count_plus">+</span>
+            <span class="likes_count">0</span>
+            <span class="likes_count_minus">-</span>
+          </div>
+          <div class="body_comment">
+            <div class="user">
+              <div class="left_side_up_comment_user">
+                <div class="image">
+                  <img src="./images/avatars/image-amyrobson.png" alt="avatar"> 
+                </div>
+                <div class="user_info">
+                  <p class="username">amyrobson</p>
+                  <p class="date">5 month ago</p>
+                </div>
+              </div>
+              <div class="reply" id="reply">
+                <i class="fa-solid fa-share"></i>
+                <p>Reply</p>
+              </div>
+            </div> 
+            <div class="content_comment">
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, nostrum maiores? Et nostrum illum ducimus. Facere dolore libero maxime ut, et nulla veritatis, sapiente quibusdam, minus iusto voluptatum accusamus tempora.</p>
+            </div>
+          </div>
+        </div>
+        <div class="comment_reply noneDisply">
+          <img src="./images/avatars/image-juliusomo.png" alt="">
+          <input type="text" placeholder="Add a comment...">
+          <button>reply</button>
+        </div>
+        <div class="reply_comments">
+          <div class="line"></div>
+          <div class="comments">
+          </div>
+        </div>
+      </div>
+      <div class="cont_comment">
+        <div class="comment">
+          <div class="likes">
+            <span class="likes_count_plus">+</span>
+            <span class="likes_count">0</span>
+            <span class="likes_count_minus">-</span>
+          </div>
+          <div class="body_comment">
+            <div class="user">
+              <div class="left_side_up_comment_user">
+                <div class="image">
+                  <img src="./images/avatars/image-ramsesmiron.png" alt="avatar"> 
+                </div>
+                <div class="user_info">
+                  <p class="username">ramsesmiron</p>
+                  <p class="date">1 month ago</p>
+                </div>
+              </div>
+              <div class="reply" id="reply">
+                <i class="fa-solid fa-share"></i>
+                <p>Reply</p>
+              </div>
+            </div> 
+            <div class="content_comment">
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, nostrum maiores? Et nostrum illum ducimus. Facere dolore libero maxime ut, et nulla veritatis, sapiente quibusdam, minus iusto voluptatum accusamus tempora.</p>
+            </div>
+          </div>
+        </div>
+        <div class="comment_reply noneDisply">
+          <img src="./images/avatars/image-juliusomo.png" alt="">
+          <input type="text" placeholder="Add a comment...">
+          <button>reply</button>
+        </div>
+        <div class="reply_comments">
+          <div class="line"></div>
+          <div class="comments">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="myComments" id="myComments">
+    <div class="myComment" id="myComment">
+    </div>
+    <div class="commentadd">
+      <img src="./images/avatars/image-juliusomo.png" alt="">
+      <input type="text" placeholder="Add a comment..." id="input_mycomment">
+      <button id="sendcomment">send</button>
+    </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
