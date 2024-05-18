@@ -9,7 +9,7 @@ comment.forEach((element, index) => {
         let recommentInput = element.parentElement.children[1]
         recommentInput.classList.remove("noneDisply")
         element.parentElement.children[1].children[1].value = `@${element.children[1].children[0].children[0].children[1].children[0].textContent} `
-        console.log(element.parentElement.children[1].children[1])
+        console.log(element.parentElement.children[1].children[2])
     })
     element.parentElement.children[1].children[2].addEventListener("click", () => {
         // element.parentElement.children[1]
